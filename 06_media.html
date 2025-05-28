@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Tags Demo</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "Poppins", sans-serif;
+        background-color: #efefef;
+        padding: 20px;
+      }
+      h1, h2 {
+        font-weight: 600;
+        color: #333;
+      }
+      iframe, audio, video {
+        margin-bottom: 30px;
+        display: block;
+      }
+      audio {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+      }
+      video {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>🎬 HTML MEDIA ELEMENTS DEMO</h1>
+
+    <!-- IFRAME SECTION -->
+    <h2>🌐 Embedded YouTube Video</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/NPkPtu61yV4?si=n9A6iYNHyCWfsC3v"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+
+    <h2>🌐 Embedded Wikipedia</h2>
+    <iframe
+      src="https://www.wikipedia.org/"
+      frameborder="0"
+      width="100%"
+      height="400">
+    </iframe>
+
+    <h2>📍 Embedded Google Maps (Phoenix Marketcity Pune)</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.26131732789!2d73.91411937534653!3d18.56225398253939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c147b8b3a3bf%3A0x6f7fdcc8e4d6c77e!2sPhoenix%20Marketcity%20Pune!5e0!3m2!1sen!2sin!4v1693563525384!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <!-- AUDIO SECTION -->
+    <h2>🔊 HTML AUDIO - "audio_thapa.mp3"</h2>
+    <audio controls autoplay muted>
+      <source src="./audio/audio_thapa.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- VIDEO SECTION -->
+    <h2>📹 HTML VIDEO - "thapatechs.mp4"</h2>
+    <video controls muted loop width="500">
+      <source src="./video/thapatechs.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complete HTML & SEO Guide - Web Development Basics</title>
+  <meta name="description" content="Learn HTML basics, SEO tips, website structure, semantic tags, and examples with free & paid hosting options." />
+  <meta name="keywords" content="HTML tutorial, SEO basics, website building blocks, semantic HTML, hosting free, paid hosting" />
+  <meta name="author" content="Your Name or Your Brand" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>The Best HTML Course on Youtube</h1>
+    <nav>
+      <a href="#headings">Headings</a> |
+      <a href="#paragraphs">Paragraphs</a> |
+      <a href="#links">Links & Anchors</a> |
+      <a href="#images">Images</a> |
+      <a href="#lists">Lists</a> |
+      <a href="#semantic">Semantic HTML</a> |
+      <a href="#hosting">Hosting Options</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Section: Website Basics -->
+    <section>
+      <h2>Building Blocks of a Website & How Websites Work</h2>
+      <p>Websites are created using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. HTML is the foundation—you can't create a website without mastering HTML first. CSS and JavaScript add styling and interactivity.</p>
+      <p>When you click on text on one page and it redirects you to another, that text is called a <em>hypertext</em> or <em>hyperlink</em>. This concept was introduced in the world's first website created by Tim Berners-Lee.</p>
+      <p>Front-end developers create static websites, and combining front-end, back-end, and databases creates a full-stack website.</p>
+    </section>
+
+    <!-- Section: HTML Headings -->
+    <section id="headings">
+      <h2>HTML Heading Elements</h2>
+      <h1>Heading Level 1 (H1)</h1>
+      <h2>Heading Level 2 (H2)</h2>
+      <h3>Heading Level 3 (H3)</h3>
+      <h4>Heading Level 4 (H4)</h4>
+      <h5>Heading Level 5 (H5)</h5>
+      <h6>Heading Level 6 (H6)</h6>
+
+      <h3>Interview Questions</h3>
+      <ul>
+        <li>How many levels of headings are available in HTML? (6 levels)</li>
+        <li>What is the default font size for HTML headings?</li>
+        <li>What happens if you skip heading levels, like from <code>&lt;h1&gt;</code> to <code>&lt;h3&gt;</code>?</li>
+        <li>How many <code>&lt;h1&gt;</code> tags should be on a single page? (One, ideally)</li>
+      </ul>
+      <p><em>Note:</em> Maintaining proper heading hierarchy improves accessibility and SEO.</p>
+    </section>
+
+    <!-- Section: Paragraphs -->
+    <section id="paragraphs">
+      <h2>HTML Paragraph Elements</h2>
+      <p>
+        Thapa Technical is an amazing YouTube channel for learning web development. Their tutorials are easy to follow and enjoyable.
+      </p>
+      <p id="noWhitespace">Subscribe to Thapa Technical</p>
+      <p id="whitespace">Subscribe to
+        Thapa
+        Technical
+      </p>
+      <p><strong>Note:</strong> HTML collapses multiple spaces and line breaks into a single space in the browser rendering.</p>
+
+      <h3>Interview Questions</h3>
+      <ul>
+        <li>How do you create a paragraph using the <code>&lt;p&gt;</code> tag?</li>
+        <li>Can you nest other block-level elements inside a paragraph? (No, only inline elements)</li>
+      </ul>
+    </section>
+
+    <!-- Section: Comments -->
+    <section>
+      <h2>HTML Comments</h2>
+      <p>Comments in HTML are written between <code>&lt;!--</code> and <code>--&gt;</code>. They are not rendered on the webpage.</p>
+      <!-- This is a comment example -->
+    </section>
+
+    <!-- Section: Text Formatting & Nesting -->
+    <section>
+      <h2>HTML Text Formatting and Nesting</h2>
+      <p>Example of proper nested tags:</p>
+      <p>My cat is <strong>very</strong> grumpy.</p>
+      <p><em>Incorrect nesting causes errors:</em></p>
+      <pre>&lt;p&gt;My cat is &lt;strong&gt;very grumpy.&lt;/p&gt;&lt;/strong&gt;</pre>
+    </section>
+
+    <!-- Section: Void Elements -->
+    <section>
+      <h2>Void (Empty) Elements</h2>
+      <p>Void elements do not have closing tags. Examples include:</p>
+      <ul>
+        <li><code>&lt;img&gt;</code> for images</li>
+        <li><code>&lt;input&gt;</code> for form inputs</li>
+        <li><code>&lt;link&gt;</code> for stylesheets or icons</li>
+        <li><code>&lt;hr&gt;</code> for horizontal lines</li>
+        <li><code>&lt;br&gt;</code> for line breaks</li>
+      </ul>
+    </section>
+
+    <!-- Section: Anchor Tags & Links -->
+    <section id="links">
+      <h2>HTML Anchor Tags & Links</h2>
+      <p>
+        Create links using the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute. Example:
+      </p>
+      <a href="https://www.thapatechnical.com" target="_blank" rel="noopener noreferrer">Visit Thapa Technical</a>
+      
+      <h3>Anchor Tag Tips</h3>
+      <ul>
+        <li><strong>Internal page link:</strong> Use <code>href="#sectionID"</code> to jump within the same page.</li>
+        <li><strong>Relative vs Absolute URLs:</strong> Relative links point to files within the site; absolute links include full URL.</li>
+        <li><strong>Download attribute:</strong> <code>&lt;a href="file.pdf" download&gt;Download PDF&lt;/a&gt;</code> forces file download.</li>
+        <li><strong>Email link:</strong> <code>&lt;a href="mailto:email@example.com"&gt;Send Email&lt;/a&gt;</code></li>
+        <li><strong>Phone link:</strong> <code>&lt;a href="tel:+1234567890"&gt;Call Us&lt;/a&gt;</code></li>
+      </ul>
+    </section>
+
+    <!-- Section: Images -->
+    <section id="images">
+      <h2>HTML Image Tag</h2>
+      <p>Basic image example:</p>
+      <img src="./images/html.png" alt="Best HTML Course" width="200" height="500" title="Watch HTML by Thapa" />
+      <p>Make images clickable by wrapping in a link:</p>
+      <a href="https://www.thapatechnical.com" target="_blank" rel="noopener noreferrer">
+        <img src="./images/html.png" alt="Clickable Image" width="200" />
+      </a>
+    </section>
+
+    <!-- Section: Lists -->
+    <section id="lists">
+      <h2>HTML Lists</h2>
+      <h3>Unordered List (&lt;ul&gt;)</h3>
+      <ul style="list-style-type: disc;">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+      </ul>
+      <ul style="list-style-type: circle;">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+      </ul>
+
+      <h3>Ordered List (&lt;ol&gt;)</h3>
+      <ol style="list-style-type: decimal;">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+      <ol style="list-style-type: lower-alpha;">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+
+      <h3>Interview Questions</h3>
+      <ul>
+        <li>Difference between &lt;ul&gt; and &lt;ol&gt;?</li>
+        <li>How to change list-style-type?</li>
+        <li>Can lists be nested? (Yes)</li>
+      </ul>
+    </section>
+
+    <!-- Section: Semantic HTML -->
+    <section id="semantic">
+      <h2>Semantic HTML Tags</h2>
+      <p>Semantic tags add meaning to your HTML, improving accessibility and SEO. Common semantic tags:</p>
+      <ul>
+        <li><code>&lt;header&gt;</code> – Page or section header</li>
+        <li><code>&lt;nav&gt;</code> – Navigation links</li>
+        <li><code>&lt;main&gt;</code> – Main content</li>
+        <li><code>&lt;article&gt;</code> – Self-contained content</li>
+        <li><code>&lt;section&gt;</code> – Thematic grouping</li>
+        <li><code>&lt;footer&gt;</code> – Page or section footer</li>
+        <li><code>&lt;aside&gt;</code> – Sidebar content</li>
+        <li><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> – For images with captions</li>
+      </ul>
+    </section>
+
+    <!-- Section: Hosting Options -->
+    <section id="hosting">
+      <h2>Free and Paid Hosting Options</h2>
+      <h3>Free Hosting</h3>
+      <ul>
+        <li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> – Host static sites directly from GitHub repos.</li>
+        <li><a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a> – Easy deployment for static sites with CDN.</li>
+        <li><a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a> – Great for frontend frameworks and static sites.</li>
+      </ul>
+      <h3>Paid Hosting</h3>
+      <ul>
+        <li><a href="https://www.bluehost.com/" target="_blank" rel="noopener noreferrer">Bluehost</a> – Affordable shared hosting with domain registration.</li>
+        <li><a href="https://www.hostgator.com/" target="_blank" rel="noopener noreferrer">HostGator</a> – Shared and cloud hosting options.</li>
+        <li><a href="https://aws.amazon.com/ec2/" target="_blank" rel="noopener noreferrer">AWS EC2</a> – Scalable cloud hosting with full control.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Karan Chavan | All rights reserved !</p>
+  </footer>
+</body>
+</html>

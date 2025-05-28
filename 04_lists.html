@@ -1,0 +1,147 @@
+<!-- 
+*---------------------------------------------------
+*  HTML LIST TAGS: ORDERED vs UNORDERED LISTS 📝
+*---------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML LIST TAGS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+
+      html {
+        font-family: "Jost", sans-serif;
+        background-color: #efefef;
+      }
+
+      h1 {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      li {
+        text-transform: capitalize;
+      }
+
+      .nav {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+      }
+
+      hr {
+        margin: 30px auto;
+        width: 80%;
+      }
+
+      section {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HTML LIST TAGS</h1>
+    <section>
+      <!-- Basic Unordered List -->
+      <h2>Unordered List</h2>
+      <ul style="list-style-type: none">
+        <li>apple</li>
+        <li>banana</li>
+        <li>pears</li>
+      </ul>
+
+      <hr />
+
+      <!-- Basic Ordered List -->
+      <h2>Ordered List (start from 10)</h2>
+      <ol start="10">
+        <li>1st class</li>
+        <li>2nd class</li>
+        <li>3rd class</li>
+      </ol>
+
+      <hr />
+
+      <!-- Nested List -->
+      <h2>Nested List</h2>
+      <ul>
+        <li>
+          Fruits
+          <ol>
+            <li>banana</li>
+            <li>
+              apple
+              <ul>
+                <li>red</li>
+                <li>green</li>
+              </ul>
+            </li>
+            <li>pears</li>
+          </ol>
+        </li>
+        <li>Vegetables</li>
+        <li>Meats</li>
+      </ul>
+
+      <hr />
+
+      <!-- Horizontal Menu using UL -->
+      <h2>Navigation Menu using Unordered List</h2>
+      <ul class="nav">
+        <li><a href="https://thapatechnical.shop/" target="_blank">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </section>
+
+    <!-- 
+    ?------------------------------------------
+    ? INTERVIEW QUESTIONS ON HTML LIST TAGS 💬
+    ?------------------------------------------
+
+    1️⃣ What is the significance of the type attribute in ordered lists?
+    - type="1": Default style using decimal numbers.
+    - type="A": Uppercase letters (A, B, C...).
+    - type="a": Lowercase letters (a, b, c...).
+    - type="I": Uppercase Roman numerals (I, II, III...).
+    - type="i": Lowercase Roman numerals (i, ii, iii...).
+
+    2️⃣ What is the use of the start attribute in ordered lists?
+    - It specifies the starting number of an ordered list.
+    Example: <ol start="5"> will begin with 5, 6, 7...
+
+    3️⃣ Explain the concept of nested lists.
+    - A nested list is a list within another list. You can combine <ul> and <ol> inside each other.
+    Example: Fruits → Apple → Green / Red
+
+    4️⃣ How do you create a horizontal navigation menu using an unordered list?
+    - Use CSS flexbox to display list items in a row.
+    Example:
+        ul {
+          display: flex;
+          list-style: none;
+          gap: 20px;
+        }
+        li a {
+          text-decoration: none;
+        }
+
+    -->
+  </body>
+</html>

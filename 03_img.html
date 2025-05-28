@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML IMAGE TAGS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        font-weight: bold;
+        background-color: #efefef;
+        text-align: center;
+      }
+      img {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 8px;
+      }
+      h1 {
+        margin-top: 30px;
+      }
+      figure {
+        margin: 20px auto;
+      }
+      figcaption {
+        margin-top: 10px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Image with Link -->
+    <h1>HTML IMG TAG</h1>
+    <a href="https://thapatechnical.shop/source-code" target="_blank">
+      <img
+        src="./images/html.png"
+        alt="HTML course thumbnail"
+        width="250"
+        height="150"
+        title="HTML Course Banner"
+        loading="lazy"
+      />
+    </a>
+
+    <!-- Clickable Image Map -->
+    <h1>HTML IMAGE MAP</h1>
+    <img
+      src="./images/html.png"
+      alt="Clickable World Map"
+      usemap="#map"
+      width="250"
+      height="150"
+    />
+    <map name="map">
+      <area
+        shape="rect"
+        coords="150,30,200,80"
+        target="_blank"
+        href="https://youtu.be/5p8e2ZkbOFU"
+        alt="My YouTube Channel"
+      />
+    </map>
+
+    <!-- Picture Tag -->
+    <h1>HTML PICTURE TAG</h1>
+    <picture>
+      <source srcset="./images/html.webp" type="image/webp" />
+      <source srcset="./images/html.png" type="image/png" />
+      <img
+        src="./images/html.png"
+        alt="Best HTML Course by Thapa Technical"
+        width="500"
+      />
+    </picture>
+
+    <!-- Figure and Figcaption -->
+    <h1>HTML FIGURE TAG</h1>
+    <p>
+      Thapa Technical is an amazing YouTube channel for learning web development.
+      Their tutorials are easy to follow and enjoyable. Check them out!
+    </p>
+    <figure>
+      <img
+        src="./images/html.png"
+        alt="HTML Thumbnail Best Course"
+        width="500"
+      />
+      <figcaption>The best HTML course ever made on Earth</figcaption>
+    </figure>
+    <p>
+      By watching their videos, you can learn the skills needed for a web development job.
+      Boost your career with Thapa Technical!
+    </p>
+
+  </body>
+</html>

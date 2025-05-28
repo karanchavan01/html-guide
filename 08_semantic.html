@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thapa Technical - Semantic HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, nav, main, section, article, aside, footer {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero-section button {
+      margin-right: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero-section button:first-child {
+      background-color: #007bff;
+      color: white;
+    }
+    .hero-section button:last-child {
+      background-color: #28a745;
+      color: white;
+    }
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    figure figcaption {
+      font-style: italic;
+      color: #555;
+      margin-top: 8px;
+    }
+    details {
+      background: #eee;
+      padding: 10px 15px;
+      border-radius: 6px;
+      max-width: 600px;
+    }
+    details summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    mark {
+      background-color: #ffeb3b;
+      padding: 0 4px;
+    }
+    address {
+      font-style: normal;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <a href="https://thapatechnical.shop/" target="_blank" rel="noopener noreferrer">
+        <img src="./images/logo.png" alt="Thapa Technical logo" width="150" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <h1>I am Vinod Bahadur Thapa aka Thapa Technical</h1>
+      <p>
+        This website is all about <mark>Website Development</mark>, Technical Tips & Tricks, Design Principles,
+        Source Code sales, and Programming videos in Hindi language.
+      </p>
+      <button>See My Works</button>
+      <a href="#"><button>Visit YouTube</button></a>
+    </section>
+
+    <article>
+      <h2>Why Choose Thapa Technical?</h2>
+      <p>
+        Our channel provides in-depth tutorials, practical examples, and hands-on projects that empower you to
+        become a proficient web developer.
+      </p>
+
+      <figure>
+        <img src="https://via.placeholder.com/600x300" alt="Responsive Web Layout" />
+        <figcaption>Building Responsive Web Layouts - Latest Tutorial</figcaption>
+      </figure>
+
+      <details>
+        <summary>More About Our Tutorials</summary>
+        <p>
+          We focus on beginner to advanced web technologies including HTML, CSS, JavaScript, ReactJS, Node.js,
+          and more. Join our community and grow your skills!
+        </p>
+      </details>
+    </article>
+
+    <aside>
+      <h3>Latest Video</h3>
+      <p>Check out our latest video: "Building Responsive Web Layouts."</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Thapa Technical. All rights reserved.</p>
+    <address>
+      Contact us at: <a href="mailto:support@thapatechnical.shop">support@thapatechnical.shop</a><br />
+      Visit us: 123 Web Dev St, Code City, IN
+    </address>
+  </footer>
+
+</body>
+</html>

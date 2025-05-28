@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Basics - Thapa Technical</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+    html {
+      font-family: "Poppins", sans-serif;
+      background-color: #efefef;
+      text-align: center;
+      padding: 20px;
+    }
+    img {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 8px;
+    }
+    hr {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- *------------------------------------- -->
+  <!--* 1: HTML HEADING ELEMENTS              -->
+  <!-- *------------------------------------- -->
+  <h1>THE BEST HTML COURSE BY THAPA TECHNICAL</h1>
+  <h2>THE BEST HTML COURSE BY THAPA TECHNICAL</h2>
+  <h3>THE BEST HTML COURSE BY THAPA TECHNICAL</h3>
+  <h4>THE BEST HTML COURSE BY THAPA TECHNICAL</h4>
+  <h5>THE BEST HTML COURSE BY THAPA TECHNICAL</h5>
+  <h6>THE BEST HTML COURSE BY THAPA TECHNICAL</h6>
+
+  <!-- Notes -->
+  <!-- 
+    * Headings range from <h1> to <h6>.
+    * <h1> is the most important, <h6> the least.
+    * Only one <h1> per page (traditionally).
+    * Follow proper hierarchy (SEO + accessibility).
+  -->
+
+  <!-- Interview Qs -->
+  <!--? Q1: How many levels of headings are there in HTML? -->
+  <!-- 6 -->
+  <!--? Q2: What happens if we skip heading levels? -->
+  <!-- It affects accessibility and SEO negatively. -->
+
+  <hr />
+
+  <!-- *------------------------------------- -->
+  <!--* 2: HTML PARAGRAPH ELEMENTS            -->
+  <!-- *------------------------------------- -->
+  <p>
+    Thapa Technical is an amazing YouTube channel for learning web development. <br />
+    Their tutorials are easy to follow and enjoyable. You can learn real skills for jobs!
+  </p>
+
+  <p>
+    <strong>Thapa Technical</strong> helps you in learning HTML, CSS, JavaScript, React and much more!
+  </p>
+
+  <!-- Interview Q -->
+  <!--? Q: Can we nest <h1> inside <p>? -->
+  <!--! No. <p> cannot contain block elements like <h1>. It must only include inline elements. -->
+
+  <!-- ❌ Incorrect nesting -->
+  <!-- <p>This is <h1>wrong</h1></p> -->
+
+  <!-- ✅ Correct nesting -->
+  <p>This is <strong>correct</strong> usage inside a paragraph.</p>
+
+  <hr />
+
+  <!-- *------------------------------------- -->
+  <!--* 3: TEXT FORMATTING ELEMENTS           -->
+  <!-- *------------------------------------- -->
+  <p>This is <strong>important</strong> and <em>emphasized</em> text.</p>
+
+  <p>This is <u>underlined</u> and <s>strikethrough</s> text.</p>
+
+  <p>Water formula 👉 H<sub>2</sub>O</p>
+  <p>Theory of Relativity 👉 E = mc<sup>2</sup></p>
+
+  <pre>
+To
+The Principal
+XYZ School
+
+Date: 28 May 2025
+
+Subject: Leave Application
+
+Respected Sir/Madam,
+
+I am feeling unwell and request you to grant me leave for two days.
+
+Thanking you,
+Thapa Technical
+  </pre>
+
+  <p>To save the file, press <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+
+  <p><abbr title="World Health Organization">WHO</abbr> is a global organization.</p>
+
+  <p>Highlight <mark>this part</mark> for visibility.</p>
+
+  <p>This is <small>small text</small> for footnotes or legal info.</p>
+
+  <p><del>My favorite color is red.</del></p>
+
+  <p style="color: green">This is an example of <strong>inline CSS</strong>.</p>
+
+  <hr />
+
+  <!-- *------------------------------------- -->
+  <!--* 4: NESTING FORMATTING TAGS CORRECTLY  -->
+  <!-- *------------------------------------- -->
+  <!-- ❌ Incorrect nesting -->
+  <!-- <p>This is <strong>wrong nesting.</p></strong> -->
+
+  <!-- ✅ Correct nesting -->
+  <p>This is <strong>properly nested</strong> formatting.</p>
+
+  <hr />
+
+  <!-- *------------------------------------- -->
+  <!--* BONUS: HINDI CONTENT TEST             -->
+  <!-- *------------------------------------- -->
+  <h2>🌐 हिंदी कंटेंट:</h2>
+  <p>नमस्ते! यह मेरी <strong>HTML वेबसाइट</strong> है।</p>
+
+  <footer>
+    <hr />
+    <p>🚀 Created with ❤️ by Thapa Technical Learner</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Forms Demo</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+
+    html {
+      font-family: "jost", sans-serif;
+      background-color: #efefef;
+      padding: 20px;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="url"],
+    input[type="search"],
+    input[type="date"],
+    input[type="time"],
+    input[type="color"],
+    input[type="month"],
+    input[type="week"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 6px;
+    }
+
+    .sameclass {
+      background-color: #ffd6d6;
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      padding: 15px 20px 20px 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    legend {
+      font-weight: 700;
+      padding: 0 10px;
+    }
+
+    input[type="submit"],
+    button[type="submit"] {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Forms Demo</h1>
+
+  <!-- Form with various input types -->
+  <form action="#" method="post">
+
+    <!-- Password and number input -->
+    <div>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        class="sameclass"
+        placeholder="Enter your password"
+        name="password"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="number">Max Subjects</label>
+      <input
+        type="number"
+        class="sameclass"
+        id="number"
+        name="maxSubjects"
+        max="5"
+        min="1"
+        value="1"
+      />
+    </div>
+
+    <!-- Radio buttons for Gender -->
+    <div>
+      <label>Gender</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male" style="display:inline;">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female" style="display:inline;">Female</label>
+    </div>
+
+    <!-- Checkboxes for Hobbies -->
+    <div>
+      <label>Fav Hobbies:</label>
+      <input type="checkbox" id="music" name="interest" value="music" />
+      <label for="music" style="display:inline;">Music</label>
+
+      <input type="checkbox" id="sports" name="interest" value="sports" />
+      <label for="sports" style="display:inline;">Sports</label>
+    </div>
+
+    <!-- Dropdown select -->
+    <div>
+      <label for="countrySelect">Fav Country:</label>
+      <select name="countrySelect" id="countrySelect">
+        <option value="">-- Select Country --</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+      </select>
+    </div>
+
+    <!-- Datalist for autocomplete -->
+    <div>
+      <label for="countryInput">Select a Country:</label>
+      <input type="text" id="countryInput" name="countryInput" list="countries" placeholder="Start typing..." />
+      <datalist id="countries">
+        <option value="USA"></option>
+        <option value="Canada"></option>
+        <option value="UK"></option>
+      </datalist>
+    </div>
+
+    <!-- Textarea -->
+    <div>
+      <label for="comments">Message Us:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="6"
+        placeholder="Enter your comments"
+      ></textarea>
+    </div>
+
+    <!-- File Upload -->
+    <div>
+      <label for="fileUpload">Select File:</label>
+      <input type="file" id="fileUpload" name="fileUpload" />
+    </div>
+
+    <!-- Various input types (range, date, time, color, url, search, month, week) -->
+    <fieldset>
+      <legend>Additional Inputs</legend>
+
+      <div>
+        <label for="volume">Range (Volume):</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="80" />
+      </div>
+
+      <div>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" />
+      </div>
+
+      <div>
+        <label for="appointmentTime">Appointment Time:</label>
+        <input type="time" id="appointmentTime" name="appointmentTime" />
+      </div>
+
+      <div>
+        <label for="favoriteColor">Favorite Color:</label>
+        <input type="color" id="favoriteColor" name="favoriteColor" />
+      </div>
+
+      <div>
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="Enter website URL" />
+      </div>
+
+      <div>
+        <label for="searchQuery">Search Query:</label>
+        <input type="search" id="searchQuery" name="searchQuery" placeholder="Search..." />
+      </div>
+
+      <div>
+        <label for="expiryDate">Month & Year:</label>
+        <input type="month" id="expiryDate" name="expiryDate" />
+      </div>
+
+      <div>
+        <label for="vacationWeek">Vacation Week:</label>
+        <input type="week" id="vacationWeek" name="vacationWeek" />
+      </div>
+    </fieldset>
+
+    <!-- Semantic grouping with fieldset and legend -->
+    <fieldset>
+      <legend>Contact Info</legend>
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          autocomplete="off"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+    </fieldset>
+
+    <!-- Submit buttons -->
+    <input type="submit" value="Submit" />
+    <!-- or -->
+    <!-- <button type="submit">Submit</button> -->
+  </form>
+
+</body>
+</html>

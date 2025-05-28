@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Anchor Tag & Entities - Thapa Technical</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    a {
+      color: blue;
+      display: block;
+      margin: 0.5rem 0;
+    }
+    h1 {
+      color: #444;
+    }
+    hr {
+      margin: 2rem 0;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ANCHOR TAG SECTION -->
+  <h1>HTML Anchor Tag 🔗</h1>
+  <p>
+    The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page to another.
+  </p>
+  <a href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA" target="_blank" title="Click to Subscribe" id="subscribeLink">
+    📺 Subscribe Thapa Technical Channel
+  </a>
+  <a href="#our_service">📌 Go to Our Services</a>
+  <a href="mailto:thapa@technical.com">📧 Send Email to Thapa</a>
+  <a href="tel:+1234567890">📞 Call Us</a>
+  <a href="htmlbythapa.zip" download>⬇️ Download HTML Project</a>
+
+  <p>
+    Thapa Technical is an amazing YouTube channel for learning web development. Their tutorials are easy to follow and enjoyable. Check it out!
+  </p>
+
+  <hr id="our_service" />
+
+  <h2>💼 Our Services</h2>
+  <p>
+    We offer top-notch tutorials on HTML, CSS, JavaScript, and more. Whether you're a beginner or advanced learner, Thapa Technical has something for you.
+  </p>
+
+  <hr />
+
+  <!-- ATTRIBUTES EXPLANATION -->
+  <h2>🔍 Anchor Tag Attributes</h2>
+  <ul>
+    <li><b>href:</b> URL the link points to.</li>
+    <li><b>target:</b> Where to open the link (e.g., <code>_blank</code>).</li>
+    <li><b>download:</b> Initiates download of the linked file.</li>
+    <li><b>title:</b> Tooltip text when hovering.</li>
+    <li><b>id:</b> Unique identifier for internal linking.</li>
+    <li><b>class:</b> For CSS/JS styling or targeting.</li>
+    <li><b>style:</b> Inline styling.</li>
+    <li><b>tabindex:</b> Keyboard navigation order.</li>
+    <li><b>accesskey:</b> Keyboard shortcut.</li>
+    <li><b>aria-*:</b> For accessibility.</li>
+  </ul>
+
+  <hr />
+
+  <!-- INTERVIEW QUESTIONS -->
+  <h2>📘 Anchor Tag Interview Questions</h2>
+  <ol>
+    <li><b>How to create a link within the same page?</b><br/>
+      Use <code>&lt;a href="#section"&gt;</code> and the section must have <code>id="section"</code>.
+    </li>
+    <li><b>Difference between Relative and Absolute URLs?</b><br/>
+      <b>Relative:</b> <code>about.html</code> <br/>
+      <b>Absolute:</b> <code>https://example.com/about.html</code>
+    </li>
+    <li><b>How does <code>download</code> attribute work?</b><br/>
+      Suggests the browser to download the file instead of navigating to it.
+    </li>
+    <li><b>How to create an email link?</b><br/>
+      <code>&lt;a href="mailto:someone@example.com"&gt;</code>
+    </li>
+    <li><b>How to initiate a phone call?</b><br/>
+      <code>&lt;a href="tel:+1234567890"&gt;</code>
+    </li>
+  </ol>
+
+  <hr />
+
+  <!-- BONUS NOTES -->
+  <h2>🎁 Bonus Tips</h2>
+  <ul>
+    <li>✅ Always use quotes in attributes: <code>&lt;a href="https://..."&gt;</code></li>
+    <li>✅ Single or double quotes are both fine, but don’t mix!</li>
+    <li>✅ You can use one type of quote inside the other: 
+      <code>&lt;a href="..." title="Isn't this cool?"&gt;</code>
+    </li>
+  </ul>
+
+  <hr />
+
+  <!-- HTML ENTITIES -->
+  <h2>💡 HTML Entities</h2>
+  <p>
+    HTML entities represent special characters. Useful when characters conflict with HTML or are not available on keyboard.
+  </p>
+  <ul>
+    <li><code>&lt;</code> 👉 Less than sign (&lt;)</li>
+    <li><code>&gt;</code> 👉 Greater than sign (&gt;)</li>
+    <li><code>&amp;</code> 👉 Ampersand (&amp;)</li>
+    <li><code>&quot;</code> 👉 Double quote (")</li>
+    <li><code>&apos;</code> 👉 Single quote (')</li>
+    <li><code>&nbsp;</code> 👉 Non-breaking space</li>
+    <li><code>&copy;</code> 👉 ©</li>
+    <li><code>&reg;</code> 👉 ®</li>
+    <li><code>&trade;</code> 👉 ™</li>
+    <li><code>&hearts;</code> 👉 ♥</li>
+    <li><code>&dollar;</code> 👉 $</li>
+  </ul>
+
+  <p>
+    Example: <br />
+    <code>&lt;p&gt;</code> becomes <b>&lt;p&gt;</b> <br />
+    &copy; 2025 Thapa Technical. All rights reserved.
+  </p>
+
+  <hr />
+
+  <!-- ENTITY INTERVIEW QUESTIONS -->
+  <h2>🧠 HTML Entities Interview Questions</h2>
+  <ol>
+    <li><b>When to use <code>&nbsp;</code>?</b><br/>
+      To prevent collapsing of multiple spaces.
+    </li>
+    <li><b>How to show trademark symbol?</b><br/>
+      Use <code>&amp;trade;</code> = ™
+    </li>
+    <li><b>Why use HTML entities?</b><br/>
+      To avoid syntax conflicts and ensure proper display.
+    </li>
+    <li><b>Show dollar symbol using different methods:</b><br/>
+      <code>&amp;dollar;</code>, <code>&#36;</code>, <code>&#x24;</code>
+    </li>
+  </ol>
+
+  <p>💖 Sharing is caring! For more: <a href="https://www.htmlquick.com/reference/character-entity-reference.html" target="_blank">HTML Entity Reference</a></p>
+</body>
+</html>

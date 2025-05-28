@@ -1,0 +1,168 @@
+<!-- *------------------------------------- -->
+<!--*  HTML TABLE TAG EXPLANATION FILE  
+<!-- *---------------------------------------- -->
+<!--? The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tables</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "Poppins", sans-serif;
+        background-color: #efefef;
+      }
+      h1 {
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+      }
+      table {
+        margin: 20px auto;
+        text-align: center;
+        border: 1px solid #000;
+        border-collapse: collapse;
+        background-color: #fff;
+      }
+      tr,
+      td,
+      th {
+        border: 3px solid #000;
+        padding: 10px 20px;
+      }
+      tfoot td {
+        font-weight: bold;
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Table Tag</h1>
+
+    <!-- Example 1: Simple User Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>vinod</td>
+          <td>thapa</td>
+        </tr>
+        <tr>
+          <td>thapa</td>
+          <td>123</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total Users: 2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Example 2: Timetable with rowspan and colspan -->
+    <table>
+      <thead>
+        <tr>
+          <th colspan="7">Weekly Timetable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="6">Hours</td>
+          <td>Mon</td>
+          <td>Tue</td>
+          <td>Wed</td>
+          <td>Thu</td>
+          <td>Fri</td>
+          <td>Sat</td>
+        </tr>
+        <tr>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>Games</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Games</td>
+        </tr>
+        <tr>
+          <td colspan="6">Lunch Break</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>English</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td rowspan="2">Sports</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>Science</td>
+          <td>Math</td>
+          <td>English</td>
+          <td>Math</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- *------------------------------------- -->
+    <!--*  LIST OF DEPRECATED TAGS - HTML TABLES -->
+    <!-- *---------------------------------------- -->
+
+    <!-- 
+      <table align="...">     ⛔ Used to align the table horizontally.
+      <tr align="...">        ⛔ Align table row contents.
+      <td align="...">        ⛔ Align content inside a table cell.
+      <th align="...">        ⛔ Align content inside a header cell.
+      <bgcolor="...">         ⛔ Sets background color of table/cell.
+      <border="...">          ⛔ Sets border width of the table.
+      <frame="...">           ⛔ Defines outer table frames.
+      <rules="...">           ⛔ Defines internal rules for table cells.
+      <width="...">           ⛔ Sets the width of table/cell.
+      cellspacing / cellpadding ⛔ Spacing inside and around cells.
+    -->
+
+    <!-- *------------------------------------- -->
+    <!--*  INTERVIEW Q: HTML TABLES -->
+    <!-- *---------------------------------------- -->
+
+    <!--? 1: What is the purpose of the <thead>, <tbody>, and <tfoot> elements within a table? -->
+    <!-- 
+        ✅ <thead>: For grouping header rows.
+        ✅ <tbody>: For grouping the main body content rows.
+        ✅ <tfoot>: For footer or summary rows.
+    -->
+
+    <!--? 2: How can you create table headers using the <th> element? How is it different from using <td>? -->
+    <!-- 
+        ✅ <th>: Table header (bold & centered by default).
+        ✅ <td>: Table data cell (normal content).
+        ✅ <th> is semantically important for accessibility and sorting.
+    -->
+
+    <!--? 3: What is the significance of the colspan and rowspan attributes in table cells? Provide an example. -->
+    <!-- 
+        ✅ colspan="2": Merge 2 columns → <td colspan="2">Merged</td>
+        ✅ rowspan="3": Merge 3 rows → <td rowspan="3">Merged</td>
+    -->
+
+    <!-- SHARING IS CARING 💖 -->
+    <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse -->
+  </body>
+</html>
